@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import s from './ContactForm.module.css';
-import PropTypes from 'prop-types';
 import { nanoid } from 'nanoid';
 import { useSelector, useDispatch } from 'react-redux';
 import { addContact } from 'redux/contactSlice';
@@ -82,8 +81,3 @@ export default function ContactForm({ onSubmit }) {
     </form>
   );
 }
-
-ContactForm.propTypes = {
-  onSubmit: PropTypes.func.isRequired,
-};
-
