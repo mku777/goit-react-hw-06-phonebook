@@ -30,7 +30,7 @@ const contactSlice = createSlice({
     },
     filterContact(state, { payload }) {
       state.filter = payload;
-    },
+    },    
   },
 });
 export const contactReducer = persistReducer(
